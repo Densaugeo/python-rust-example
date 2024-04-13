@@ -30,8 +30,15 @@ AttributeError: add
 
 ## Sources
 
-https://cffi.readthedocs.io/en/latest/overview.html#other-cffi-modes
+Reddit discussion of this project: https://www.reddit.com/r/rust/comments/1c3fjfz/attempting_to_create_a_simple_example_of_calling/
+
+CFFI docs: https://cffi.readthedocs.io/en/latest/overview.html#other-cffi-modes
+
+PYO3 GitHub: https://github.com/PyO3/pyo3
+
 https://stackoverflow.com/questions/65246103/using-cffi-to-call-functions-of-shared-library-from-python
+
 https://blog.ian.stapletoncordas.co/2018/01/making-python-faster-with-rust-and-cffi-or-not.html
+
 https://www.reddit.com/r/rust/comments/7w6sel/help_call_python_defined_function_from_rust_via/
-https://github.com/PyO3/pyo3
+
