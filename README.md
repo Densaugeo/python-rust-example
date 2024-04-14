@@ -10,22 +10,12 @@ The example in the PYO3 repo sort-of works, but breaks if anything at all is cha
 
 ## Current State
 
-Rust components can be built using `cargo` and the example script can be run using `python`, but calling the Rust function does not work:
+Rust components can be built using `cargo` and the example script can be run using `python`:
 
 ```
 $ cargo build
 $ python python.py
-<cffi.api._make_ffi_library.<locals>.FFILibrary object at 0x7fbc17e26960>
-[]
-Traceback (most recent call last):
-  File "/home/den-antares/projects/python-rust/python.py", line 13, in <module>
-    print(C.add)
-          ^^^^^
-  File "/usr/lib64/python3.12/site-packages/cffi/api.py", line 912, in __getattr__
-    make_accessor(name)
-  File "/usr/lib64/python3.12/site-packages/cffi/api.py", line 907, in make_accessor
-    raise AttributeError(name)
-AttributeError: add
+3
 ```
 
 ## Sources
@@ -42,3 +32,6 @@ https://blog.ian.stapletoncordas.co/2018/01/making-python-faster-with-rust-and-c
 
 https://www.reddit.com/r/rust/comments/7w6sel/help_call_python_defined_function_from_rust_via/
 
+## Acknowledgements
+
+Thanks to https://www.reddit.com/user/DeathLeopard/ for finding what was missing!

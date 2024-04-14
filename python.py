@@ -8,7 +8,4 @@ ffi.cdef('''
 
 C = ffi.dlopen('target/debug/libpython_rust_example.so')
 
-print(C)
-print(dir(C))
-print(C.add)
 print(C.add(1, 2))
